@@ -1,0 +1,102 @@
+apriltags:
+  # Bottom side (y=0), facing up (z-axis)
+  - id: 0
+    x: 2.665
+    y: 0.0
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 0.0
+    qw: 1.0
+  - id: 1
+    x: 5.335
+    y: 0.0
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 0.0
+    qw: 1.0
+  # Top side (y=8), facing down (z-axis)
+  - id: 2
+    x: 2.665
+    y: 8.0
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 1.0
+    qw: 0.0
+  - id: 3
+    x: 5.335
+    y: 8.0
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 1.0
+    qw: 0.0
+  # Left side (x=0), facing right (x-axis)
+  - id: 4
+    x: 0.0
+    y: 2.665
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 0.707
+    qw: 0.707
+  - id: 5
+    x: 0.0
+    y: 5.335
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 0.707
+    qw: 0.707
+  # Right side (x=8), facing left (x-axis)
+  - id: 6
+    x: 8.0
+    y: 2.665
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: -0.707
+    qw: 0.707
+  - id: 7
+    x: 8.0
+    y: 5.335
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: -0.707
+    qw: 0.707
+  # Inner square (centered at 4,4, size 1x1ft), tags facing outward
+  - id: 8
+    x: 4.0
+    y: 3.5
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 1.0
+    qw: 0.0
+  - id: 9
+    x: 4.0
+    y: 4.5
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 0.0
+    qw: 1.0
+  - id: 10
+    x: 3.5
+    y: 4.0
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: -0.707
+    qw: 0.707
+  - id: 11
+    x: 4.5
+    y: 4.0
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 0.707
+    qw: 0.707

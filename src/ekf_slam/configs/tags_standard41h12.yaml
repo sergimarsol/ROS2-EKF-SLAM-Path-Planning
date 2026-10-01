@@ -1,0 +1,27 @@
+# AprilTag configuration for smooth trajectory navigation - HW2
+# Strategic placement for curved path: (0,0) → (1,0) → (1,2,π) → (0,0)
+# Tag 1: Position (2.2, 1.5) oriented at -135° - visibility during WP1→WP2 approach
+# Tag 4: Position (-1.2, 0.5) oriented at 45° - visibility during WP2→WP3 approach
+/**:
+    ros__parameters:
+        image_transport: raw    # image format
+        family: Standard41h12   # CORRECT family name for Standard41h12 tags
+        size: 0.1524            # tag edge size in meter (6 inches = 0.1524 meters)
+        max_hamming: 1          # maximum allowed hamming distance (corrected bits)
+
+        # see "apriltag.h" 'struct apriltag_detector' for more documentation on these optional parameters
+        detector:
+            threads: 4          # number of threads
+            decimate: 1.0       # decimate resolution for quad detection (lower = more sensitive)
+            blur: 0.0           # sigma of Gaussian blur for quad detection
+            refine: True        # snap to strong gradients
+            sharpening: 0.4     # sharpening of decoded images
+            debug: True         # enable debug for smooth trajectory testing
+
+        pose_estimation_method: "pnp"    # enable pose estimation for navigation
+
+        # Specify tags for detection (AprilTags 0-7)
+        tag:
+            ids: [0, 1, 2, 3, 4, 5, 6, 7]                                              # tag IDs: 0 through 7
+            frames: [tag_0, tag_1, tag_2, tag_3, tag_4, tag_5, tag_6, tag_7]           # frame names
+            sizes: [0.1524, 0.1524, 0.1524, 0.1524, 0.1524, 0.1524, 0.1524, 0.1524]  # all tags are 6 inches

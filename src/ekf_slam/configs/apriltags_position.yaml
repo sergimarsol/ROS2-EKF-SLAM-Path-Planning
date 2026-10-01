@@ -1,0 +1,74 @@
+# AprilTag family: standard41h12
+# 8 tags (IDs 0-7) arranged in a 2.5x2.5m square, 2 tags per side, facing inward
+apriltags:  
+  # Top side tags (facing down/south)
+  - id: 0
+    x: -0.625
+    y: 1.25
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 1.0
+    qw: 0.0
+  - id: 1
+    x: 0.625
+    y: 1.25
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 1.0
+    qw: 0.0
+    
+  # Right side tags (facing left/west)
+  - id: 2
+    x: 1.25
+    y: 0.625
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 0.707
+    qw: 0.707
+  - id: 3
+    x: 1.25
+    y: -0.625
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 0.707
+    qw: 0.707
+    
+  # Bottom side tags (facing up/north)
+  - id: 4
+    x: 0.625
+    y: -1.25
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 0.0
+    qw: 1.0
+  - id: 5
+    x: -0.625
+    y: -1.25
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: 0.0
+    qw: 1.0
+    
+  # Left side tags (facing right/east)
+  - id: 6
+    x: -1.25
+    y: -0.625
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: -0.707
+    qw: 0.707
+  - id: 7
+    x: -1.25
+    y: 0.625
+    z: 0.0
+    qx: 0.0
+    qy: 0.0
+    qz: -0.707
+    qw: 0.707

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>roadmap_path_planning</name>
+  <version>0.0.0</version>
+  <description>Roadmap path planning (minimum-distance and maximum-safety) with Dijkstra and AprilTag localization</description>
+  <maintainer email="126708766+sergimarsol@users.noreply.github.com">Sergi Marsol, Yule Zhang</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
