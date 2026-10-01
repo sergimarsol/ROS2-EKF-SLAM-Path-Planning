@@ -163,7 +163,12 @@ class Hw5SolutionNode(Node):
         # Load waypoints from CSV file
         # Try to load lawnmower waypoints from the generated CSV
         script_dir = os.path.dirname(os.path.abspath(__file__))
+        # Look next to the module first, then in the package-level output/ folder
+        # (where lawnmower_trajectory.py writes it; found with `colcon build --symlink-install`)
         lawnmower_csv = os.path.join(script_dir, 'output', 'turn_waypoints.csv')
+        package_csv = os.path.join(script_dir, '..', 'output', 'turn_waypoints.csv')
+        if not os.path.exists(lawnmower_csv) and os.path.exists(package_csv):
+            lawnmower_csv = os.path.abspath(package_csv)
         
         if os.path.exists(lawnmower_csv):
             self.waypoints = self.load_waypoints_from_csv(lawnmower_csv)

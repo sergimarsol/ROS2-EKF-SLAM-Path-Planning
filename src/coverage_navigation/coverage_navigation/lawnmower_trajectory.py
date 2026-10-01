@@ -8,8 +8,8 @@ and saves them to CSV as x,y (meters).
 Also plots the full trajectory and saves a PNG.
 
 Outputs are stored in:
-  /coverage_navigation/coverage_navigation/output/turn_waypoints.csv
-  /coverage_navigation/coverage_navigation/output/lawnmower_straight_trajectory.png
+  coverage_navigation/output/turn_waypoints.csv
+  coverage_navigation/output/lawnmower_straight_trajectory.png
 """
 
 import numpy as np
@@ -32,7 +32,7 @@ point_spacing = 0.05           # spacing along sweeps for plotting/trajectory sa
 
 # -------------------- OUTPUT PATHS --------------------
 script_dir = os.path.dirname(os.path.abspath(__file__))
-output_dir = os.path.join(script_dir, "output")
+output_dir = os.path.join(script_dir, "..", "output")  # package-level output/ folder
 os.makedirs(output_dir, exist_ok=True)
 
 out_csv = os.path.join(output_dir, "turn_waypoints.csv")
