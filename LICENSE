@@ -19,10 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----------------------------------------------------------------------------
-Note: the base robot drivers in src/robot_control and src/robot_vision were
-provided by the UCSD CSE 276A course staff for the RubikPi robot and are
-included here only so the workspace builds. They are not covered by the
-copyright line above. apriltag_ros is an external dependency and is not
-included in this repository.

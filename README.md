@@ -227,3 +227,5 @@ python3 src/coverage_navigation/coverage_navigation/plot_trajectory.py
 
 ## License
 [MIT](LICENSE) © 2026 Sergi Marsol and Yule Zhang. The course-provided base drivers in `src/robot_control` and `src/robot_vision` belong to their original authors and are included only so that the workspace builds.
+
+See [`NOTICE`](NOTICE) for third-party components and data licenses.
