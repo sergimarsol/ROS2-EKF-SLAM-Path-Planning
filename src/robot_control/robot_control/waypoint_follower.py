@@ -1,6 +1,6 @@
 """
 Waypoint follower for differential drive robot with pose targets.
-HW1: Follow waypoints with (x, y, theta) targets.
+Follow waypoints with (x, y, theta) targets.
 
 Based on lecture: "Moving to a Pose" strategy
 - rho: distance to goal
@@ -108,7 +108,7 @@ class WaypointFollower(Node):
         }
         
         self.get_logger().info('=' * 60)
-        self.get_logger().info('HW1: WAYPOINT FOLLOWER INITIALIZED')
+        self.get_logger().info('WAYPOINT FOLLOWER INITIALIZED')
         self.get_logger().info('=' * 60)
         self.get_logger().info(f'Waypoints loaded: {len(self.waypoints)}')
         self.get_logger().info(f'Control gains: Kρ={self.Kp_rho}, Kα={self.Kp_alpha}, Kβ={self.Kp_beta}')

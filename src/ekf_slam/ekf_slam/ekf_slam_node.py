@@ -305,7 +305,7 @@ def generate_movements(waypoints):
         movements.append({'type': 'stop', 'duration': 2.0})
     return movements
 
-class Hw3SolutionNode(Node):
+class EkfSlamNode(Node):
     def __init__(self):
         super().__init__('ekf_slam_node_node')
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
@@ -365,7 +365,7 @@ class Hw3SolutionNode(Node):
         import tf2_ros
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
-        self.get_logger().info('Hw3SolutionNode initialized with timers, waypoints, and TF2.')
+        self.get_logger().info('EkfSlamNode initialized with timers, waypoints, and TF2.')
 
         # Serial/motor control setup
         self.robot = None
@@ -615,7 +615,7 @@ class Hw3SolutionNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = Hw3SolutionNode()
+    node = EkfSlamNode()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:

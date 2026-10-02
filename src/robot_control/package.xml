@@ -4,7 +4,7 @@
   <name>robot_control</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="noreply@example.com">CSE 276A course staff (base robot drivers)</maintainer>
+  <maintainer email="noreply@example.com">Course staff (base robot drivers)</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>

@@ -96,7 +96,7 @@ class PIDcontroller:
             result[0] = 0.0
         return result
 
-class Hw4SolutionNode(Node):
+class RoadmapNavigationNode(Node):
     def __init__(self):
         super().__init__('roadmap_navigation_node_node')
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
@@ -445,7 +445,7 @@ class Hw4SolutionNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = Hw4SolutionNode()
+    node = RoadmapNavigationNode()
     
     try:
         rclpy.spin(node)

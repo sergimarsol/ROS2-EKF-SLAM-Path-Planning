@@ -1,4 +1,4 @@
-# AprilTag configuration for smooth trajectory navigation - HW2
+# AprilTag configuration (tag family 41h12)
 # Strategic placement for curved path: (0,0) → (1,0) → (1,2,π) → (0,0)
 # Tag 1: Position (2.2, 1.5) oriented at -135° - visibility during WP1→WP2 approach
 # Tag 4: Position (-1.2, 0.5) oriented at 45° - visibility during WP2→WP3 approach

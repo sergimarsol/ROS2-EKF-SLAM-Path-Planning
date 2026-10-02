@@ -7,7 +7,7 @@ from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
     """
-    Launch file for HW2 sequence navigation.
+    Launch file for AprilTag-corrected sequence navigation.
     Starts two nodes:
     1. sequence_navigation - Time-based sequence control with AprilTag corrections
     2. motor_control - Communicates with robot hardware via serial

@@ -146,7 +146,7 @@ class PIDcontroller:
             result[0] = 0.0
         return result
 
-class Hw5SolutionNode(Node):
+class CoverageNavigationNode(Node):
     def __init__(self):
         super().__init__('coverage_navigation_node_node')
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
@@ -232,7 +232,7 @@ class Hw5SolutionNode(Node):
         self.avoidance_duration = 1.5  # seconds to avoid before resuming waypoint following
         self.avoidance_angular_vel = 0.0
         
-        self.get_logger().info('=== HW5 SUBSUMPTION ARCHITECTURE INITIALIZED ===')
+        self.get_logger().info('=== COVERAGE NAVIGATION: SUBSUMPTION ARCHITECTURE INITIALIZED ===')
         self.get_logger().info(f'Arena bounds: {arena_size:.2f}m x {arena_size:.2f}m')
         self.get_logger().info(f'Obstacle detection margin: {self.obstacle_detector.safety_margin:.2f}m')
         self.get_logger().info('Behavior priorities: 1) Collision Avoidance, 2) Waypoint Following')
@@ -580,7 +580,7 @@ class Hw5SolutionNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = Hw5SolutionNode()
+    node = CoverageNavigationNode()
     
     try:
         rclpy.spin(node)

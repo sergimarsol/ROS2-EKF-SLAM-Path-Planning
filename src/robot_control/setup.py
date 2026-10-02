@@ -19,7 +19,7 @@ setup(
         'numpy>=1.20.0',
     ],
     zip_safe=True,
-    maintainer='CSE 276A course staff',
+    maintainer='Course staff (base robot drivers)',
     maintainer_email='noreply@example.com',
     description='Robot motor controller with keyboard input for ROS2',
     license='MIT',
